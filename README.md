@@ -1,5 +1,5 @@
 #sample-profile-page: a c22coders project
-A sample profile page. Under MIT License.
+A Sample Profile Page. Under MIT License.
 ##So what is this exactly?
 This is a sample profile page. This is what could be used for a "profile" page for users, and you can adapt this to your needs. In GitHub's case, it looks like [this](https://github.com/settings/profile).
 ##Usage
