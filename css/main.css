@@ -13,4 +13,7 @@
 body {
   background-color: #ccddff;
 }
-
+.required:before {
+  color: #f00;
+  content: "*";
+}

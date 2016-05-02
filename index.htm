@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <!--
- * Custom Profile Page
+ * Sample Profile Page
  * Copyright 2016 c22coders
  * Licensed under MIT (https://github.com/c22coders/sample-profile-page/blob/gh-pages/LICENSE)
  -->
   <head>
     <title>A sample profile page</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-XYCjB+hFAjSbgf9yKUgbysEjaVLOXhCgATTEBpCqT1R3jvG5LGRAK5ZIyRbH5vpX" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
   </head>
@@ -22,40 +23,37 @@
             <li class="active"><a href="#">My Account</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Logged in as <span id="username">exampleuser</span>.</a></li>
+            <li><a href="#">Logged in as <span class="fa fa-user"></span> <span id="username">exampleuser</span>.</a></li>
           </ul>
       </div>
     </nav>
 <h2>Account</h2>
-    <div class="main"> <!-- This "main" class represents the main portion of the site, this can be changed to something else too -Todd -->
-	<table>
+<div class="main"> <!-- This "main" class represents the main portion of the site, this can be changed to something else too -Todd -->
+  <h3 class="required">: Required</h3>
+  <table>
 		<tbody>
 			<tr>
 				<td>Name: <span class="required"></span></td>
-				<td><input type="text" name="fname" placeholder="John Smith" required></td>
+				<td><span class="fa fa-user"></span> <input type="text" name="fname" placeholder="John Smith" required></td>
 			</tr>
 			<tr>
 				<td>Email:</td>
-				<td><input type="email" placeholder="example@example.com" name="email"></td>
+				<td><span class="fa fa-envelope"></span> <input type="email" placeholder="example@example.com" name="email"></td>
 			</tr>
 			<tr>
 				<td>Username: <span class="required"></td>
-				<td><input type="text" name="uname" maxlength="15" placeholder="Example User" required></td>
+				<td><span class="fa fa-user"></span> <input type="text" name="uname" maxlength="15" placeholder="exampleuser" required></td>
 			</tr>
 			<tr>
 				<td>Password: <span class="required"></td>
-				<td><input type="password" name="password" maxlength="32" placeholder="Example Password" required></td>
+				<td><span class="fa fa-asterisk"></span> <input type="password" name="password" maxlength="32" required></td>
 			</tr>
 			<tr>
 				<td>Password Hint</td>
-				<td><input type="text" name="hint"></td>
+				<td><span class="fa fa-question-circle"></span> <input type="text" name="hint"></td>
 			</tr>
 			<tr>
-<<<<<<< HEAD
 				<td><input type="checkbox" required name="terms"> I agree to this site's <a href="#"></a>terms and conditions <span class="required"></a></td>
-=======
-				<td><input type="checkbox" checked required name="terms"> I agree to <a href=""></a>terms and conditions</a></td>
->>>>>>> 1018aa39a2c4751fd70bd93d6f22d65d99604192
 			<br>
 			</tr>
 			<tr>
@@ -65,18 +63,58 @@
 	</table>
 	</div>
 	<h2>Place of Birth</h2>
-	<form>
-<input type="radio" name="place" value="Africa">Africa <br>
-<input type="radio" name="place" value="Asia">Asia <br>
-<input type="radio" name="place" value="North America">North America<br>
-<input type="radio" name="place" value="South America">South America<br>
-<input type="radio" name="place" value="Europe">Europe<br>
-<input type="radio" name="place" value="Australia">Australia<br>
-<input type="radio" name="place" value="Antartica">Antartica<br>
-	</form>
-<h2>Date of Birth</h2>
+	<select>
+    <option value="Africa">Africa</option>
+    <option value="Asia">Asia</option>
+    <option value="North America"></option>
+    <option value="South America"></option>
+    <option value="Europe">Europe</option>
+    <option value="Australia">Australia</option>
+    <option value="Antartica">Antartica</option>
+	</select>
+<h2>Date of Birth <span class="required"></h2>
 	<select required>
 		<option value="Year">Year</option>
+    <option value="1900">1900</option>
+		<option value="1901">1901</option>
+		<option value="1902">1902</option>
+		<option value="1903">1903</option>
+		<option value="1904">1904</option>
+		<option value="1905">1905</option>
+		<option value="1906">1906</option>
+		<option value="1907">1907</option>
+		<option value="1908">1908</option>
+		<option value="1909">1909</option>
+		<option value="1910">1910</option>
+		<option value="1911">1911</option>
+		<option value="1912">1912</option>
+		<option value="1913">1913</option>
+		<option value="1914">1914</option>
+		<option value="1915">1915</option>
+		<option value="1916">1916</option>
+		<option value="1917">1917</option>
+		<option value="1918">1918</option>
+		<option value="1919">1919</option>
+    <option value="1920">1920</option>
+		<option value="1921">1921</option>
+		<option value="1922">1922</option>
+		<option value="1923">1923</option>
+		<option value="1924">1924</option>
+		<option value="1925">1925</option>
+		<option value="1926">1926</option>
+		<option value="1927">1927</option>
+		<option value="1928">1928</option>
+		<option value="1929">1929</option>
+		<option value="1930">1930</option>
+		<option value="1931">1931</option>
+		<option value="1932">1932</option>
+		<option value="1933">1933</option>
+		<option value="1934">1934</option>
+		<option value="1935">1935</option>
+		<option value="1936">1936</option>
+		<option value="1937">1937</option>
+		<option value="1938">1938</option>
+		<option value="1939">1939</option>
 		<option value="1940">1940</option>
 		<option value="1941">1941</option>
 		<option value="1942">1942</option>
@@ -217,5 +255,17 @@
 		<td>Job: </td>
 		<td><input type="text" name="job" placeholder="Example Job"></td>
 	</form>
+  <form>
+    <td><h2>Education</h2>
+        <td><input type="text" name="school" placeholder="School"></td>
+      <select>
+        <option value="Type of School">Type of School</option>
+        <option value="Elementary School">Elementary School</option>
+        <option value="Middle School">Middle School</option>
+        <option value="High School">High School</option>
+        <option value="College/University">College/University</option>
+      </select>
+    </td>
+  </form>
   </body>
 </html>
