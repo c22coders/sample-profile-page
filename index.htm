@@ -31,15 +31,15 @@
 		<tbody>
 			<tr>
 				<td>Name: </td>
-				<td><input type="text" name="fname" placeholder="Example Name"></td>
+				<td><input type="text" name="fname" placeholder="Example Name" required></td>
 			</tr>
 			<tr>
 				<td>Username: </td>
-				<td><input type="text" name="uname" placeholder="Example User"></td>
+				<td><input type="text" name="uname" maxlength="10" placeholder="Example User" required></td>
 			</tr>
 			<tr>
 				<td>Password: </td>
-				<td><input type="password" name="password" minlength="6" maxlength="8" placeholder="Example Password"></td>
+				<td><input type="password" name="password" maxlength="8" placeholder="Example Password" required></td>
 			</tr>
 			<tr>
 				<td>Password Hint</td>
@@ -63,7 +63,7 @@
 <input type="radio" name="place" value="Antartica">Antartica<br>
 	</form>
 <h2>Date of Birth</h2>
-	<select>
+	<select required>
 <option value="Year">Year</option>
 <option value="1970">1970</option>
 <option value="1971">1971</option>
