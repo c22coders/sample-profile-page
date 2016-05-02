@@ -39,8 +39,12 @@
 				<td><input type="email" placeholder="Example Email" name="email"></td>
 			</tr>
 			<tr>
-				<td>Username: </td>
+				<td id="username">Username: </td>
 				<td><input type="text" name="uname" maxlength="10" placeholder="Example User" required></td>
+				 <script>
+					var name = "username";
+					document.getElementById("demo").innerHTML = name;
+				</script>
 			</tr>
 			<tr>
 				<td>Password: </td>
@@ -172,5 +176,6 @@
 		  <input type="radio" name="gender" value="female"> Female<br>
 		  <input type="radio" name="gender" value="other"> Other
 	</form>
+	<input type="button" onclick="alert('var="username"')" value="Click Me!">
   </body>
 </html>
