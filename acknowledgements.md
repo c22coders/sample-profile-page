@@ -4,3 +4,4 @@ Thank you!
 - To all of the projects that made this website possible.
   - [Bootswatch](https://bootswatch.com)
   - [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
+  - [Google Fonts](https://www.google.com/fonts)
