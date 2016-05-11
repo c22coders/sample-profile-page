@@ -15,26 +15,22 @@
   <script type="text/javascript">
   	document.getElementById("fname").value =localStorage.name;
   	
-  	window.submit = function(){
-  	 localStorage.setItem("name", document.getElementById("fname").value;
-  	 localStorage.setItem("email", document.getElementById("email").value;
-  	 localStorage.setItem("username", document.getElementById("uname").value;
-  	 localStorage.setItem("password", document.getElementById("password").value;
-  	 localStorage.setItem("hint", document.getElementById("hint").value;
-  	 localStorage.setItem("terms", document.getElementById("terms").value;
-  	 localStorage.setItem("location", document.getElementById("location").value;
-  	 localStorage.setItem("africa", document.getElementById("Africa").value;
-  	 localStorage.setItem("asia", document.getElementById("Asia").value;
-  	 localStorage.setItem("namerica", document.getElementById("NorthAmerica").value;
-  	 localStorage.setItem("samerica", document.getElementById("SouthAmerica").value;
-  	 localStorage.setItem("europe", document.getElementById("Europe").value;
-  	 localStorage.setItem("australia", document.getElementById("Australia").value;
-  	 localStorage.setItem("australia", document.getElementById("Australia").value;
-  	 
-  	 
-  	function myFunction() {
-    alert("Changes Saved");
-}
+  	function myFunction(){
+  	 localStorage.name = document.getElementById("fname").value;
+  	 localStorage.email = document.getElementById("email").value;
+  	 localStorage.uname = document.getElementById("uname").value;
+  	 localStorage.password = document.getElementById("password").value;
+  	 localStorage.hint = document.getElementById("hint").value;
+  	 localStorage.terms = document.getElementById("terms").value;
+  	 localStorage.location = document.getElementById("location").value;
+  	 localStorage.africa = document.getElementById("Africa").value;
+  	 localStorage.asia = document.getElementById("Asia").value;
+  	 localStorage.namerica = document.getElementById("NorthAmerica").value;
+  	 localStorage.samerica = document.getElementById("SouthAmerica").value;
+  	 localStorage.europe = document.getElementById("Europe").value;
+  	 localStorage.australia = document.getElementById("Australia").value;
+  	 localStorage.australia = document.getElementById("Australia").value;
+  	}
   </script>
   <body>
     <h1 class="center-text">My Account</h1>
