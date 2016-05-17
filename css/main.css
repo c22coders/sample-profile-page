@@ -30,3 +30,6 @@ button {
     margin: 4px 2px;
     cursor: pointer;
 }
+.required {
+	font-size: 19px;
+}
