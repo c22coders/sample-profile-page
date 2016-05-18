@@ -32,6 +32,7 @@
   	 localStorage.australia = document.getElementById("Australia").value;
   	}
   </script>
+
   <body>
     <h1 class="center-text">My Account</h1>
     <nav class="navbar navbar-default">
@@ -39,7 +40,7 @@
         <div class="navbar-header">
           <a class="navbar-brand" href="#">Brand</a>
           <!-- 
-          *WUT EVEN IS THIS "Brand" THING- Todd
+          *WUT EVEN IS THIS "Brand" THING! -Todd
           -->
         </div>
           <ul class="nav navbar-nav">
@@ -80,7 +81,21 @@
 			<br>
 			</tr>
 			<tr>
-				<td><input type="checkbox" id="location"> Allow Use Of Location</td>
+				<td><input type="checkbox" id="location" onclick="getLocation()"> Allow Use Of Your Location</td>
+				<script>
+var x = document.getElementById("demo");
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude; 
+}
+</script>
 			</tr>
 		</tbody>
 	</table>
