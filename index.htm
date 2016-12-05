@@ -68,59 +68,7 @@
 				<td><span class="fa fa-envelope"></span>&nbsp;Email: <span class="required"></td>
 				<td><input type="email" placeholder="example@example.com" id="email"></td>
 			</tr>
-			<tr>
-				<td><span class="fa fa-user"></span>&nbsp;Username: <span class="required"></td>
-				<td><input type="text" id="uname" maxlength="15" placeholder="exampleuser" required></td>
-			</tr>
-			<tr>
-				<td><span class="fa fa-asterisk"></span>&nbsp;Password: <span class="required"></td>
-				<td><input type="password" id="password" maxlength="32" required></td>
-			</tr>
-			<tr>
-				<td><span class="fa fa-question-circle"></span>&nbsp;Password Hint: </td>
-				<td><input type="text" id="hint"></td>
-			</tr>
-			<tr>
-				<td><input type="checkbox" id="terms" required name="terms"> I agree to this site's <a href="terms.htm">terms and conditions</a> <span class="required"></a></td>
-			<br>
-			</tr>
-			<tr>
-				<td><input type="checkbox" id="location" onclick="getLocation()"> Allow Use Of Your Location</td>
-				<script>
-var x = document.getElementById("demo");
-function getLocation() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
-    } else {
-        x.innerHTML = "Sorry, geolocation is not supported by this browser.";
-    }
-}
-function showPosition(position) {
-    x.innerHTML = "Latitude: " + position.coords.latitude + 
-    "<br>Longitude: " + position.coords.longitude; 
-}
-</script>
-			</tr>
-		</tbody>
-	</table>
-	</div>
-	<h2>Profile Image</h2>
-	<form action="#" method="post" enctype="multipart/form-data">
-    Select image to upload:
-    <input type="file" name="fileToUpload" id="fileToUpload">
-    <input type="submit" value="Upload Image" name="submit">
-</form>
-	<h2>Place of Birth</h2>
-	<select>
-    <option id="Africa">Africa</option>
-    <option id="Asia">Asia</option>
-    <option id="NorthAmerica">North America</option>
-    <option id="SouthAmerica">South America</option>
-    <option id="Europe">Europe</option>
-    <option id="Australia">Australia</option>
-    <option id="Antartica">Antartica</option>
-	</select>
-<h2>Date of Birth <span class="required"></h2>
+			<h2>Date of Birth <span class="required"></h2>
 	<select>
 		<option id="Month">Month</option>
 		<option id="Jan">January</option>
@@ -290,6 +238,61 @@ function showPosition(position) {
 		<option id="2015">2015</option>
 		<option id="2016">2016</option>
 	</select>
+			<tr>
+				<td><span class="fa fa-user"></span>&nbsp;Username: <span class="required"></td>
+				<td><input type="text" id="uname" maxlength="15" placeholder="exampleuser" required></td>
+			</tr>
+			<tr>
+				<td><span class="fa fa-asterisk"></span>&nbsp;Password: <span class="required"></td>
+				<td><input type="password" id="password" maxlength="32" required></td>
+			</tr>
+			<tr>
+				<td><span class="fa fa-question-circle"></span>&nbsp;Password Hint: </td>
+				<td><input type="text" id="hint"></td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" id="terms" required name="terms"> I agree to this site's <a href="terms.htm">terms and conditions</a> <span class="required"></a></td>
+			<br>
+			</tr>
+			<tr>
+				<td><input type="checkbox" id="location" onclick="getLocation()"> Allow Use Of Your Location</td>
+				<script>
+var x = document.getElementById("demo");
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        x.innerHTML = "Sorry, geolocation is not supported by this browser.";
+    }
+}
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude; 
+}
+</script>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+	<h2>Profile Image</h2>
+	<form action="#" method="post" enctype="multipart/form-data">
+    Select image to upload:
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload Image" name="submit">
+</form>
+	<!--
+	<h2>Place of Birth</h2>
+	<select>
+    <option id="Africa">Africa</option>
+    <option id="Asia">Asia</option>
+    <option id="NorthAmerica">North America</option>
+    <option id="SouthAmerica">South America</option>
+    <option id="Europe">Europe</option>
+    <option id="Australia">Australia</option>
+    <option id="Antartica">Antartica</option>
+	</select>
+	-->
+
 <h2>Traits</h2>
 	<form>
 		<input type="color"> Eye Color
